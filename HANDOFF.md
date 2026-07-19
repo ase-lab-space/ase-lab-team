@@ -20,12 +20,12 @@
 
 ## フェーズ計画
 
-### Phase 0｜Git化・リポジトリ準備（技術側・すぐ着手可能）
-- [ ] `git init` / `.gitignore`（`.faces_orig/` など作業用の元画像を除外）
-- [ ] 初回コミット
-- [ ] GitHub に `ase-lab-space/ase-lab-team`（Public）を新規作成しpush
-- [ ] GitHub Pages 有効化（Settings → Pages: `main` / root）
-- → `https://ase-lab-space.github.io/ase-lab-team/` で内部確認できる状態にする
+### Phase 0｜Git化・リポジトリ準備（完了 2026-07-20）
+- [x] `git init` / `.gitignore`（`.faces_orig/` など作業用の元画像を除外）
+- [x] 初回コミット
+- [x] GitHub に `ase-lab-space/ase-lab-team`（Public）を新規作成しpush
+- [x] GitHub Pages 有効化（`main` / root）
+- → `https://ase-lab-space.github.io/ase-lab-team/` で内部確認できる状態（ビルド成功済み）
   （`noindex` が付いているので検索エンジンには出ない）
 
 ### Phase 1｜実データ収集・差し替え（律速。チーム側の作業待ち）
