@@ -129,7 +129,7 @@ function captainBadge(c) {
   if (c === "vice")    return '<span class="badge-c" style="background:#12204b">VICE</span>';
   return "";
 }
-// JVA m-playerList 準拠: 写真左＋データ右（背番号 / ロール / 氏名 / ローマ字＋所属）
+// JVA m-playerList 準拠: 写真左＋データ右（ロール / 氏名 / ローマ字＋所属）
 function playerCard(m) {
   const pos = POSITIONS[m.unit] || { label: m.unit, en: "", color: "#4e1ebd" };
   return `
@@ -140,10 +140,7 @@ function playerCard(m) {
         ${captainBadge(m.captain)}
       </picture>
       <div class="player-data">
-        <dl class="pl-pos">
-          <dt>${m.no}</dt>
-          <dd>${esc(pos.label)}</dd>
-        </dl>
+        <div class="pl-role">${esc(pos.label)}</div>
         <div class="pl-name">${esc(m.name)}</div>
         <div class="pl-team">
           <span class="en">${esc(m.nameEn)}</span>

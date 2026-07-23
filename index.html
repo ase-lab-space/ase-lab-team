@@ -88,23 +88,33 @@
     </div>
     <div style="height:22px"></div>
     <div class="newsrail">
-      <a class="newscard" href="#">
+      <a class="newscard" href="#" data-cat="recruit" data-catlabel="RECRUIT" data-date="2026.07.10" data-img="img/cubesat.jpg"
+         data-title="2026シーズン メンバー募集を開始しました（全国の学生対象）"
+         data-body="2026シーズンのプロジェクトメンバー募集を開始しました。所属大学・学年は問わず、全国の学生を対象としています。メカニカル・エレクトロニクス・ソフトウェアの3領域で、実際の宇宙・航空プロジェクトに挑む仲間を募ります。応募方法や選考スケジュールの詳細は、INFORMATION の「参加を希望する」からご確認ください。">
         <div class="thumb"><span class="cat recruit">RECRUIT</span><img src="img/cubesat.jpg" alt=""></div>
         <div class="body"><div class="date">2026.07.10</div><div class="ttl">2026シーズン メンバー募集を開始しました（全国の学生対象）</div></div>
       </a>
-      <a class="newscard" href="#">
+      <a class="newscard" href="#" data-cat="news" data-catlabel="NEWS" data-date="2026.06.28" data-img="img/engineers.jpg"
+         data-title="キックオフ合宿を実施。10大学・12名でシーズンのミッションを定義しました"
+         data-body="シーズン開幕にあたりキックオフ合宿を実施しました。全国から集ったメンバーが初めて顔を合わせ、今シーズンのミッションと開発スコープを議論。ユニットごとの役割分担を編成し、チームとしての土台をつくりました。ここからシーズンを通じた設計・試験・運用のサイクルが始まります。">
         <div class="thumb"><span class="cat news">NEWS</span><img src="img/engineers.jpg" alt=""></div>
         <div class="body"><div class="date">2026.06.28</div><div class="ttl">キックオフ合宿を実施。10大学・12名でシーズンのミッションを定義しました</div></div>
       </a>
-      <a class="newscard" href="#">
+      <a class="newscard" href="#" data-cat="project" data-catlabel="PROJECT" data-date="2026.06.05" data-img="img/cleanroom.jpg"
+         data-title="姿勢制御ユニットが試験環境の内製化に成功、初回動作確認をクリア"
+         data-body="エレクトロニクス／ソフトウェアユニットが、姿勢制御の試験環境を内製化することに成功しました。センサ計測から制御演算までを自前のリグ上で再現し、初回の動作確認をクリア。市販の試験装置に頼らず、自分たちの手で検証ループを回せる体制が整いました。今後はパラメータ調整と長時間試験へと進みます。">
         <div class="thumb"><span class="cat project">PROJECT</span><img src="img/cleanroom.jpg" alt=""></div>
         <div class="body"><div class="date">2026.06.05</div><div class="ttl">姿勢制御ユニットが試験環境の内製化に成功、初回動作確認をクリア</div></div>
       </a>
-      <a class="newscard" href="#">
+      <a class="newscard" href="#" data-cat="news" data-catlabel="NEWS" data-date="2026.05.20" data-img="img/mission-control.jpg"
+         data-title="テクニカルディレクターによる第1回設計レビューを開催しました"
+         data-body="第1回の設計レビューを開催しました。各ユニットが現時点の設計案を発表し、要求とのトレーサビリティやリスク項目について指摘を受けました。第一線で活躍する技術者からのフィードバックは、実務水準の設計判断を学ぶ貴重な機会。指摘事項は次のイテレーションで反映します。">
         <div class="thumb"><span class="cat news">NEWS</span><img src="img/mission-control.jpg" alt=""></div>
         <div class="body"><div class="date">2026.05.20</div><div class="ttl">テクニカルディレクターによる第1回設計レビューを開催しました</div></div>
       </a>
-      <a class="newscard" href="#">
+      <a class="newscard" href="#" data-cat="match" data-catlabel="FIELD" data-date="2026.04.30" data-img="img/ground-antenna.jpg"
+         data-title="地上局運用の現地実習を実施。通信リンクの取得に成功"
+         data-body="地上局運用の現地実習を行いました。アンテナの設営から追尾、受信までの一連の運用手順を実地で確認し、通信リンクの取得に成功。座学では見えない電波環境や運用上の段取りを、現場で体感しました。取得したデータは今後の運用設計とドキュメント整備に活用します。">
         <div class="thumb"><span class="cat match">FIELD</span><img src="img/ground-antenna.jpg" alt=""></div>
         <div class="body"><div class="date">2026.04.30</div><div class="ttl">地上局運用の現地実習を実施。通信リンクの取得に成功</div></div>
       </a>
@@ -212,6 +222,26 @@
   </div>
 </footer>
 
+<!-- ============ TOPICS 記事モーダル ============ -->
+<div class="topic-modal" id="topic-modal" aria-hidden="true">
+  <div class="tm-backdrop" data-close></div>
+  <div class="tm-dialog" role="dialog" aria-modal="true" aria-labelledby="tm-title">
+    <button class="tm-close" type="button" aria-label="閉じる" data-close>×</button>
+    <div class="tm-hero">
+      <img id="tm-img" src="" alt="">
+      <div class="tm-hero-meta">
+        <span class="cat" id="tm-cat"></span>
+        <div class="tm-date" id="tm-date"></div>
+        <h3 class="tm-title" id="tm-title"></h3>
+      </div>
+    </div>
+    <div class="tm-body">
+      <p id="tm-text"></p>
+      <p class="tm-note"><span class="mock-flag">SAMPLE</span> 記事本文・画像はプレビュー用のサンプルです。公開時に自チームの内容へ差し替えます。</p>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   var t=document.querySelector(".nav-toggle"), n=document.getElementById("site-nav");
@@ -221,6 +251,50 @@
     t.setAttribute("aria-expanded",open?"true":"false");
   });
   n.addEventListener("click",function(e){ if(e.target.closest("a")){ n.classList.remove("open"); t.setAttribute("aria-expanded","false"); } });
+})();
+
+/* ---- TOPICS 記事モーダル ---- */
+(function(){
+  var modal=document.getElementById("topic-modal");
+  if(!modal) return;
+  var img=document.getElementById("tm-img"),
+      cat=document.getElementById("tm-cat"),
+      date=document.getElementById("tm-date"),
+      title=document.getElementById("tm-title"),
+      text=document.getElementById("tm-text"),
+      closeBtn=modal.querySelector(".tm-close"),
+      lastFocused=null;
+
+  function open(card){
+    var d=card.dataset;
+    img.src=d.img||""; img.alt=d.title||"";
+    cat.textContent=d.catlabel||"";
+    cat.className="cat "+(d.cat||"");
+    date.textContent=d.date||"";
+    title.textContent=d.title||"";
+    text.textContent=d.body||"";
+    lastFocused=document.activeElement;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    document.body.style.overflow="hidden";
+    closeBtn.focus();
+  }
+  function close(){
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden","true");
+    document.body.style.overflow="";
+    if(lastFocused&&lastFocused.focus) lastFocused.focus();
+  }
+
+  document.querySelectorAll(".newsrail .newscard").forEach(function(card){
+    card.addEventListener("click",function(e){ e.preventDefault(); open(card); });
+  });
+  modal.querySelectorAll("[data-close]").forEach(function(el){
+    el.addEventListener("click",close);
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape"&&modal.classList.contains("open")) close();
+  });
 })();
 </script>
 </body>
